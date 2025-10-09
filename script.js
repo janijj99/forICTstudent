@@ -9,7 +9,7 @@
       const selectedUrl = selectElem.value;
       if (selectedUrl) {
         // Open PDF in new tab
-        window.open(selectedUrl, '_blank');
+        window.open(selectedUrl, '_self');
 
         // Reset the dropdown to default option (index 0)
         selectElem.selectedIndex = 0;
@@ -50,3 +50,4 @@
     initPdfDropdowns(dropdownIds);
   });
 })();
+
